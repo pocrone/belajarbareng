@@ -26,7 +26,8 @@ class Dosen extends CI_Controller
      */
     public function index()
     {
-        $this->load->view('lihat_dosen');
+        $data['data_dosen'] = $this->data_dosen->show_dosen();
+        $this->load->view('lihat_dosen', $data);
     }
     public function update_dosen()
     {

@@ -23,4 +23,10 @@ class Data_dosen extends CI_Model
         ];
         $this->db->insert('dosen', $data);
     }
+
+    function show_dosen()
+    {
+        $data = $this->db->get('dosen');
+        return $data->result();
+    }
 }
