@@ -26,7 +26,7 @@ class Data_dosen extends CI_Model
 
     function show_dosen()
     {
-        $data = $this->db->get('dosen');
+        $data = $this->db->get('dosen;');
         return $data->result();
     }
 }
